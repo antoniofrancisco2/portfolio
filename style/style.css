@@ -2,9 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,500;1,500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300&display=swap');
+
 :root {
     --cor1: #1f242d;
     --cor2: #0ef;
+    --cor3: #323846;
 
     --font1: 'Roboto Condensed', sans-serif;
 }
@@ -12,8 +15,11 @@
 *{
     margin: 0px;
     padding: 0px;
-    background-color: var(--cor1);
     font-family: var(--font1);
+}
+
+body {
+    background-color: var(--cor1);
 }
 
 /* Barra de navegação */
@@ -127,7 +133,7 @@ section h1 {
 }
 
 section p {
-    font-weight: 50;
+    font-weight: 390;
 }
 
 section h1, h3, p{
@@ -205,4 +211,105 @@ section > div#img1{
     background-size: contain; /* Ajusta o tamanho da imagem */
     background-repeat: no-repeat; /* Evita repetição */
     background-position: center; /* Centraliza a imagem */
+}
+
+/*SOBRE MIM*/
+section#sobre {
+    padding-top: 45px;
+    background-color: var(--cor3);
+}
+
+section#sobre > div > h3 {
+    color: #0ef;
+}
+
+section#sobre > h2 {
+    padding: 20px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+section#sobre > div > p {
+    padding-top: 5px;
+    padding-bottom: 25px;
+    font-weight: 500px;
+}
+
+div#botao2 {
+    margin: 0px 0px 20px 20px;
+    text-align: center; /* Garante que o texto fique centralizado */
+    display: inline-block; /* Define como bloco interno para centralização */
+    background-color: var(--cor2); /* Cor de fundo do botão */
+    color: var(--cor1); /* Cor do texto */
+    padding: 7px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    border-radius: 20px; /* Bordas arredondadas */
+    cursor: pointer; /* Mostra o cursor de clique */
+    transition: background-color 0.3s ease; /* Animação suave */
+}
+
+#botao2:hover {
+    background-color: var(--cor1); /* Altere para a cor desejada no hover */
+    color: white;
+}
+
+div#img2 {
+    display: flex;
+    background-image: url(../imagens/undraw2.svg);
+    height: 200px;
+    width: 100%;
+    background-size: contain; /* Ajusta o tamanho da imagem */
+    background-repeat: no-repeat; /* Evita repetição */
+    background-position: center; /* Centraliza a imagem */
+}
+
+/*SERVIÇOS*/
+section#servs {
+    background-color: var(--cor1);
+}
+
+#servs {
+    display: flex;
+    flex-direction: column; /* Coloca as caixas em uma coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    gap: 20px; /* Espaço entre as caixas */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.box {
+    display: flex;
+    flex-direction: column; /* Ícone e texto em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    width: 450px; /* Largura da caixa */
+    height: 200px; /* Altura da caixa */
+    background-color: var(--cor3); /* Cor de fundo */
+    border: 1px solid #ccc; /* Borda leve */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para zoom e sombra */
+}
+
+/* Zoom e realce ao passar o mouse */
+.box:hover {
+    transform: scale(1.1); /* Aumenta a caixa em 10% */
+    box-shadow: 0 6px 12px rgba(1, 255, 242, 0.2); /* Sombra mais pronunciada */
+}
+
+.box i {
+    font-size: 40px; /* Tamanho do ícone */
+    color: var(--cor2); /* Cor do ícone */
+    margin-bottom: 10px; /* Espaço abaixo do ícone */
+}
+
+.box p {
+    font-weight: 500;
+    font-size: 16px; /* Tamanho do texto */
+    color: white; /* Cor do texto */
+}
+
+section#servs > div.box >.p1 {
+    font-weight: 300;
+    
 }
