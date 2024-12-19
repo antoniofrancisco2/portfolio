@@ -281,7 +281,7 @@ section#servs {
     flex-direction: column; /* Ícone e texto em coluna */
     justify-content: center; /* Centraliza verticalmente */
     align-items: center; /* Centraliza horizontalmente */
-    width: 450px; /* Largura da caixa */
+    width: 400px; /* Largura da caixa */
     height: 200px; /* Altura da caixa */
     background-color: var(--cor3); /* Cor de fundo */
     border: 1px solid #ccc; /* Borda leve */
