@@ -116,11 +116,14 @@ body {
 }
 
 
-section {
-    margin-top: 100px;
+section{
     background-color: var(--cor1);
     color: white;
     height: 100vh;
+}
+
+section#inicio {
+    margin-top: 100px;
 }
 
 span {
@@ -317,4 +320,163 @@ section#servs {
 section#servs > div.box >.p1 {
     font-weight: 300;
     
+}
+
+/* Seção de Habilidades */
+.skills {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: var(--cor3);
+}
+
+.skills h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Container das caixas */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+/* Estilo das caixas */
+.skill-box {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.skill-box.wide {
+    grid-column: span 2; /* Ocupa duas colunas em telas grandes */
+}
+
+/* Ícones */
+.skill-box i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+/* Animação ao passar o mouse */
+.skill-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skill-box:hover i {
+    color: var(--cor2); /* Muda a cor do ícone ao passar o mouse */
+}
+
+/* Texto da caixa */
+.skill-box h3 {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.skill-box p {
+    margin: 0;
+    color: #555;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Exibir texto ao passar o mouse */
+.skill-box:hover p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsividade para versão mobile */
+@media screen and (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
+    }
+
+    .skill-box.wide {
+        grid-column: span 2; /* Ocupa toda a linha na versão mobile */
+    }
+}
+
+/* Seção do portfólio */
+#portfolio {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: var(--cor1);
+}
+
+#portfolio h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Container de projetos */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Estilo das caixas de projeto */
+.project-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Animação ao passar o mouse */
+.project-box:hover {
+    transform: scale(1.05); /* Aumenta o tamanho da caixa */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+}
+
+/* Imagem do projeto */
+.project-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Zoom na imagem ao passar o mouse */
+.project-box:hover img {
+    transform: scale(1.1);
+}
+
+/* Título do projeto */
+.project-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Exibir o título ao passar o mouse */
+.project-box:hover .project-title {
+    opacity: 1;
 }
