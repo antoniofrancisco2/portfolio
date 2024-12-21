@@ -374,8 +374,20 @@ section#servs > div.box >.p1 {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-.skill-box:hover i {
-    color: var(--cor2); /* Muda a cor do ícone ao passar o mouse */
+/*.skill-box:hover i {
+    color: var(--cor2); /* Muda a cor do ícone ao passar o mouse 
+}*/
+
+#html-skill:hover i {
+    color: #E34F26;
+}
+
+#css-skill:hover i {
+    color: #1572B6;
+}
+
+#js-skill:hover i {
+    color: #F7DF1E;
 }
 
 /* Texto da caixa */
