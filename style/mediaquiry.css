@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    section {
+        display: flex;
+    }
+
+    div#conta {
+        margin-top: 70px;
+        padding-left: 100px;
+    }
+
+    section#inicio > div#conta h1, h3, p {
+        padding: 0px 0px 1px 10px;
+    }
+
+    section#inicio > div#conta h1 {
+        font-size: 55px;
+        font-weight: 550;
+    }
+
+    section#inicio > div#conta h3 {
+        font-size: 2.0rem;
+    }
+
+    section#inicio > div#conta p {
+        font-weight: 110px;
+        font-size: 18px;
+    }
+
+    div.social-icons {
+        float: left;
+        padding-left: 20px;
+    }
+
+    div#container {
+        position: absolute;
+        white-space: nowrap;
+    }
+
+    div#botao {
+        margin-top: 45px;
+        margin-left: 77px;
+        padding: 13px 30px;
+    }
+
+    section#inicio > div#img1 {
+        margin-top: 100px;
+        height: 290px;
+    }
+}
