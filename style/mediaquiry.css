@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) {
-    section {
+    section#inicio {
         display: flex;
     }
 
     div#conta {
         margin-top: 70px;
-        padding-left: 100px;
+        padding-left: 45px;
     }
 
     section#inicio > div#conta h1, h3, p {
@@ -47,5 +47,12 @@
     section#inicio > div#img1 {
         margin-top: 100px;
         height: 290px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    div#conta {
+        margin-top: 70px;
+        padding-left: 100px;
     }
 }
