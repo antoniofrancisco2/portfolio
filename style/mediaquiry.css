@@ -48,7 +48,41 @@
         margin-top: 100px;
         height: 290px;
     }
+
+    /*AREA SOBRE*/
+    div.container {
+        display: flex;
+    }
+
+    div#sob {
+        padding-left: 50px;
+    }
+
+    div.container > div#img2 {
+        background-size: 92% 100%;
+        margin-right: 49px;
+        height: 460px;
+        width: 290%;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 992px) {
     div#conta {
