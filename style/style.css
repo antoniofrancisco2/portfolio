@@ -176,9 +176,9 @@ section h1, h3, p{
     display: inline-block; /* Define como bloco interno para centralização */
     background-color: var(--cor2); /* Cor de fundo do botão */
     color: var(--cor1); /* Cor do texto */
-    padding: 7px 20px; /* Espaçamento interno */
+    padding: 10px 20px; /* Espaçamento interno */
     font-size: 16px; /* Tamanho da fonte */
-    border-radius: 20px; /* Bordas arredondadas */
+    border-radius: 50px; /* Bordas arredondadas */
     cursor: pointer; /* Mostra o cursor de clique */
     transition: background-color 0.3s ease; /* Animação suave */
 }
@@ -249,14 +249,14 @@ section#sobre > div > p {
 }
 
 div#botao2 {
-    margin: 0px 0px 20px 20px;
+    margin: 20px 0px 20px 20px;
     text-align: center; /* Garante que o texto fique centralizado */
     display: inline-block; /* Define como bloco interno para centralização */
     background-color: var(--cor2); /* Cor de fundo do botão */
     color: var(--cor1); /* Cor do texto */
-    padding: 7px 20px; /* Espaçamento interno */
+    padding: 15px 20px; /* Espaçamento interno */
     font-size: 16px; /* Tamanho da fonte */
-    border-radius: 20px; /* Bordas arredondadas */
+    border-radius: 50px; /* Bordas arredondadas */
     cursor: pointer; /* Mostra o cursor de clique */
     transition: background-color 0.3s ease; /* Animação suave */
 }
