@@ -77,6 +77,10 @@
     .box:nth-child(3) {
         width: 45%;
     }
+
+    section#inicio {
+        margin-bottom: 90px;
+    }
 }
 
 
