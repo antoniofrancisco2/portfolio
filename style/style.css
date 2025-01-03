@@ -13,6 +13,7 @@
 }
 
 *{
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     font-family: var(--font1);
@@ -224,6 +225,7 @@ section > div#img1{
 
 /*SOBRE MIM*/
 section#sobre {
+    height: 100vh;
     padding-top: 45px;
     background-color: var(--cor3);
 }
@@ -273,54 +275,65 @@ div#img2 {
 }
 
 /*SERVIÇOS*/
-section#servs {
-    background-color: var(--cor1);
+/* Estilos Gerais */
+#servs {
+    height: 100vh;
+    text-align: center;
+    margin: 50px 0;
 }
 
-#servs {
+#servs h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.conteudo {
     display: flex;
-    flex-direction: column; /* Coloca as caixas em uma coluna */
-    align-items: center; /* Centraliza horizontalmente */
-    gap: 20px; /* Espaço entre as caixas */
-    padding: 20px; /* Espaçamento interno */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 10px;
 }
 
 .box {
-    display: flex;
-    flex-direction: column; /* Ícone e texto em coluna */
-    justify-content: center; /* Centraliza verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
-    width: 350px; /* Largura da caixa */
-    height: 200px; /* Altura da caixa */
-    background-color: var(--cor3); /* Cor de fundo */
-    border: 1px solid #ccc; /* Borda leve */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para zoom e sombra */
-}
-
-/* Zoom e realce ao passar o mouse */
-.box:hover {
-    transform: scale(1.1); /* Aumenta a caixa em 10% */
-    box-shadow: 0 6px 12px rgba(1, 255, 242, 0.2); /* Sombra mais pronunciada */
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .box i {
-    font-size: 40px; /* Tamanho do ícone */
-    color: var(--cor2); /* Cor do ícone */
-    margin-bottom: 10px; /* Espaço abaixo do ícone */
+    font-size: 3rem;
+    color: #6c5ce7;
+    margin-bottom: 15px;
 }
 
 .box p {
-    font-weight: 500;
-    font-size: 16px; /* Tamanho do texto */
-    color: white; /* Cor do texto */
+    font-size: 1rem;
+    color: #555;
 }
 
-section#servs > div.box >.p1 {
-    font-weight: 300;
-    
+/* Animação ao passar o mouse */
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade para Mobile */
+@media (max-width: 768px) {
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
 }
 
 /* Seção de Habilidades */

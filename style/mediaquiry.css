@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     section#inicio {
         display: flex;
     }
@@ -64,23 +64,20 @@
         height: 460px;
         width: 290%;
     }
+
+    .conteudo {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .box:nth-child(1), .box:nth-child(2) {
+        width: 45%;
+    }
+
+    .box:nth-child(3) {
+        width: 45%;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
