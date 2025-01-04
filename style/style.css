@@ -165,10 +165,14 @@ section h1, h3, p{
     font-size: 20px; /* Tamanho dos ícones */
     color: #555; /* Cor inicial dos ícones */
     transition: color 0.3s ease; /* Animação de mudança de cor */
+    padding: 7px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 2px #0ef;
 }
 
 .social-icons a:hover {
     color: var(--cor2); /* Muda a cor ao passar o mouse (ajuste var(--cor2) conforme necessário) */
+    box-shadow: 0px 0px 5px 2px white;
 }
 
 #botao {
@@ -185,11 +189,11 @@ section h1, h3, p{
 
 #botao:hover {
     background-color: var(--cor3); /* Altere para a cor desejada no hover */
-    color: white;
+    color: #ffffff;
 }
 
 #container {
-    margin-top: 40px;
+    margin-top: 60px;
     margin-bottom: 80px;
     position: relative;
     background-color: lightgray; /* Apenas para visualização */

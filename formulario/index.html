@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Substitua pelo link atualizado do SDK -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+</head>
+<body>
+    <section id="contact">
+        <div class="form-container">
+            <h2>Entre em Contato</h2>
+            <p>Preencha o formulário abaixo para entrar em contato comigo. Responderei em breve!</p>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Endereço de E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Número de Telefone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Digite seu telefone" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" placeholder="Escreva sua mensagem aqui" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Enviar</button>
+            </form>
+            <div id="successMessage" class="hidden">
+                <i class="fa fa-check-circle"></i>
+                <p>Formulário enviado com sucesso! Entraremos em contato em breve.</p>
+                <a href="../index.html" class="btn">Voltar à Página Inicial</a>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+<script>
+   emailjs.init("6GcfWwHIuqKlnJv1C");
+
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault(); // Impede o envio padrão do formulário
+    console.log("Formulário enviado");
+
+    // Coleta os dados do formulário
+    const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        message: document.getElementById('message').value,
+    };
+
+    console.log("Dados do formulário:", formData);
+
+    // Envia o e-mail usando o EmailJS
+    emailjs
+        .send("service_zk88rod", "template_7ffr71c", formData)
+        .then(
+            function (response) {
+                console.log("E-mail enviado com sucesso:", response);
+                document.getElementById('contactForm').classList.add('hidden');
+                document.getElementById('successMessage').classList.remove('hidden');
+            },
+            function (error) {
+                console.error("Erro ao enviar o e-mail:", error);
+                alert("Ocorreu um erro ao enviar o formulário. Verifique os detalhes no console.");
+            }
+        );
+});
+
+</script>
+</body>
+</html>
