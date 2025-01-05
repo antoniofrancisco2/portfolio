@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="favicons/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="style/mediaquiry.css">
     <link rel="stylesheet" href="style/style.css">
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
 </head>
@@ -118,7 +120,7 @@
     <section id="portfolio">
         <h2>Meus Projetos</h2>
         <div class="projects">
-            <div class="project-box">
+            <div class="project-box" id="projeto-1">
                 <img src="imagens/projeto-1.png" alt="Projeto 1">
                 <div class="project-info">
                     <i class="fa fa-info-circle"></i> <!-- Ícone de informação -->
@@ -126,7 +128,7 @@
                     <a href="https://antoniofrancisco2.github.io/projeto-cafeteria/" class="project-link">Ver Projeto</a>
                 </div>
             </div>
-            <div class="project-box">
+            <div class="project-box" id="projeto-2">
                 <img src="imagens/projeto-2.png" alt="Projeto 2">
                 <div class="project-info">
                     <i class="fa fa-info-circle"></i>
@@ -134,7 +136,7 @@
                     <a href="https://antoniofrancisco2.github.io/projeto-otica/" class="project-link">Ver Projeto</a>
                 </div>
             </div>
-            <div class="project-box">
+            <div class="project-box" id="projeto-3">
                 <img src="path-to-image3.jpg" alt="Projeto 3">
                 <div class="project-info">
                     <i class="fa fa-info-circle"></i>
@@ -142,7 +144,7 @@
                     <a href="link-do-projeto3.html" class="project-link">Ver Projeto</a>
                 </div>
             </div>
-            <div class="project-box">
+            <div class="project-box" id="projeto-4">
                 <img src="path-to-image4.jpg" alt="Projeto 4">
                 <div class="project-info">
                     <i class="fa fa-info-circle"></i>
@@ -174,6 +176,51 @@ const navbarLinks = document.getElementById('navbar-links');
 navbarToggle.addEventListener('click', () => {
     navbarLinks.classList.toggle('active'); // Adiciona ou remove a classe active
 });
+
+    ScrollReveal().reveal('#inicio', { 
+        interval: 16, 
+        reset: true 
+    });
+
+
+
+    ScrollReveal().reveal('#sobre');
+
+    ScrollReveal().reveal('#sobre');
+    ScrollReveal().reveal('.container', { 
+        delay: 500
+     });
+    ScrollReveal().reveal('#img2', { 
+        delay: 600 
+    });
+
+
+
+    window.sr = new ScrollReveal();
+
+    sr.reveal('#servs');
+    sr.reveal('.box', { 
+        delay: 400 
+    });
+
+
+
+    window.sr = new ScrollReveal();
+
+    sr.reveal('.skills');
+    sr.reveal('#html-skill', { delay: 400 });
+    sr.reveal('#css-skill', { delay: 500 });
+    sr.reveal('#js-skill', { delay: 600 });
+
+
+    window.sr = new ScrollReveal();
+
+    sr.reveal('#portfolio');
+    sr.reveal('#projeto-1', { delay: 400 });
+    sr.reveal('#projeto-2', { delay: 500 });
+    sr.reveal('#projeto-3', { delay: 600 });
+    sr.reveal('#projeto-4', { delay: 700 });
+
     </script>
 </body>
 </html>

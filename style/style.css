@@ -476,6 +476,7 @@ div#img2 {
     cursor: pointer;
 }
 
+
 /* Animação ao passar o mouse */
 .project-box:hover {
     transform: scale(1.05); /* Aumenta o tamanho da caixa */
