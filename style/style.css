@@ -165,14 +165,30 @@ section h1, h3, p{
     font-size: 20px; /* Tamanho dos ícones */
     color: #555; /* Cor inicial dos ícones */
     transition: color 0.3s ease; /* Animação de mudança de cor */
-    padding: 7px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 5px 2px #0ef;
+    padding: 5px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 5px 1px #0ef;
+    border: 1px solid var(--cor2);
+}
+
+.social-icons i {
+    
+    padding: 5px;
+}
+
+.social-icons i:hover {
+    padding: 5px;
+    border-radius: 100%;
+    background-color: #12141a38;
 }
 
 .social-icons a:hover {
+    background-color: #12141a38;
+    padding: 5px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 5px 1px white;
     color: var(--cor2); /* Muda a cor ao passar o mouse (ajuste var(--cor2) conforme necessário) */
-    box-shadow: 0px 0px 5px 2px white;
+    
 }
 
 #botao {
