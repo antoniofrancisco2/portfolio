@@ -475,14 +475,14 @@ div#img2 {
 }
 
 /* Container de projetos */
-.projects {
+/*.projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     margin-top: 20px;
 }
 
-/* Estilo das caixas de projeto */
+/* Estilo das caixas de projeto *
 .project-box {
     position: relative;
     overflow: hidden;
@@ -490,16 +490,16 @@ div#img2 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-}
+}*/
 
 
-/* Animação ao passar o mouse */
+/* Animação ao passar o mouse 
 .project-box:hover {
-    transform: scale(1.05); /* Aumenta o tamanho da caixa */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+    transform: scale(1.05); /* Aumenta o tamanho da caixa *
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra mais intensa *
 }
 
-/* Imagem do projeto */
+/* Imagem do projeto *
 .project-box img {
     width: 100%;
     height: 100%;
@@ -507,12 +507,12 @@ div#img2 {
     transition: transform 0.3s ease;
 }
 
-/* Zoom na imagem ao passar o mouse */
+/* Zoom na imagem ao passar o mouse *
 .project-box:hover img {
     transform: scale(1.1);
 }
 
-/* Caixa com informações do projeto (ícone e descrição) */
+/* Caixa com informações do projeto (ícone e descrição) *
 .project-info {
     position: absolute;
     bottom: 0;
@@ -526,26 +526,26 @@ div#img2 {
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-/* Exibir informações ao passar o mouse */
+/* Exibir informações ao passar o mouse *
 .project-box:hover .project-info {
     opacity: 1;
     visibility: visible;
 }
 
-/* Ícone de informação */
+/* Ícone de informação *
 .project-info i {
     font-size: 30px;
     margin-bottom: 10px;
     cursor: pointer;
 }
 
-/* Descrição do projeto */
+/* Descrição do projeto *
 .project-info .project-description {
     font-size: 16px;
     margin: 10px 0;
 }
 
-/* Link para ver o projeto */
+/* Link para ver o projeto *
 .project-info .project-link {
     color: #fff;
     font-size: 16px;
@@ -558,6 +558,66 @@ div#img2 {
 
 .project-info .project-link:hover {
     background-color: var(--cor2);
+} */
+
+.cards {
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: #2A2A3D;
+    color: white;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-decoration: none; /* Remove sublinhado do link */
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 15px 1px #300088;
+    transform: scale(1.05);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.tag {
+    background: #ff4081;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-shadow: 1px 1px 5px black;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 14px;
+}
+
+.img img {
+    width: 100%;
+}
+
+.information {
+    padding: 10px 20px 20px 20px;
 }
 
 /* Footer */
