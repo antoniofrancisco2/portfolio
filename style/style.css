@@ -236,7 +236,7 @@ section h1, h3, p{
 
 section > div#img1{
     display: block;
-    background-image: url(../imagens/undraw_version_control_re_mg66.svg);
+    background-image: url(../imagens/imgwndral-1.svg);
     height: 200px;
     width: 100%;
     background-size: contain; /* Ajusta o tamanho da imagem */
@@ -288,7 +288,7 @@ div#botao2 {
 
 div#img2 {
     display: flex;
-    background-image: url(../imagens/undraw2.svg);
+    background-image: url(../imagens/imgwndral-2.svg);
     height: 200px;
     width: 100%;
     background-size: contain; /* Ajusta o tamanho da imagem */
@@ -461,14 +461,9 @@ div#img2 {
     }
 }
 
-#portfolio {
-    min-height: 100vh;
-    padding: 40px 20px;
-    text-align: center;
-    background-color: var(--cor1);
-}
 
 #portfolio h2 {
+    text-align: center;
     font-size: 28px;
     margin-bottom: 20px;
     color: white;
@@ -560,13 +555,27 @@ div#img2 {
     background-color: var(--cor2);
 } */
 
-.cards {
+#cards {
+    min-height: 100vh;
+    background-color: var(--cor1);
     color: #fff;
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 20px;
+}
+
+.divh2 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.containercards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .card {
